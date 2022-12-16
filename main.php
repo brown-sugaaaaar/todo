@@ -12,27 +12,44 @@
 
 <h1>TODO</h1>
 
-<div class="col-md-4">
-  <form>
-    <div class="mb-3">
-      <label for="date" class="form-label">日付</label>
-      <input type="date" class="form-control" id="date">
+<div class="main">
+  <div>
+    <h3>フォーム</h3>
+    <div class="main_form">
+      <div class="col-md-8">
+        <form>
+          <div class="mb-3">
+            <label for="date" class="form-label">日付</label>
+            <input type="date" class="form-control" id="date">
+          </div>
+          <div class="mb-3">
+            <label for="summary" class="form-label">サマリー</label>
+            <input type="text" class="form-control" id="summary">
+          </div>
+          <div class="mb-3">
+            <label for="summary" class="form-label">詳細</label>
+            <textarea  class="form-control" rows="3"></textarea>
+          </div>
+          <!-- <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div> -->
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
     </div>
-    <div class="mb-3">
-      <label for="summary" class="form-label">サマリー</label>
-      <input type="text" class="form-control" id="summary">
-    </div>
-    <div class="mb-3">
-      <label for="summary" class="form-label">詳細</label>
-      <textarea  class="form-control" rows="3"></textarea>
-    </div>
-    <!-- <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div> -->
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-</div>
+  </div>
 
+  <div>
+    <h3>スケジュール</h3>
+    <div class="main_form">
+      <ul>
+        <li>aaa</li>
+        <li>aaa</li>
+        <li>aaa</li>
+      </ul>
+    </div>
+  </div>
+</div
 </body>
 </html>
