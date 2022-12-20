@@ -17,23 +17,20 @@
     <h3>フォーム</h3>
     <div class="main_form">
       <div class="col-md-8">
-        <form>
+        <form method="post" action="send.php">
           <div class="mb-3">
             <label for="date" class="form-label">日付</label>
-            <input type="date" class="form-control" id="date">
+            <input type="date" name="date" class="form-control" id="date">
           </div>
           <div class="mb-3">
             <label for="summary" class="form-label">サマリー</label>
-            <input type="text" class="form-control" id="summary">
+            <input type="text" name="summary" class="form-control" id="summary">
           </div>
           <div class="mb-3">
-            <label for="summary" class="form-label">詳細</label>
-            <textarea  class="form-control" rows="3"></textarea>
+            <label for="detail" class="form-label">詳細</label>
+            <textarea class="form-control" name="detail" rows="3"></textarea>
           </div>
-          <!-- <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div> -->
+
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
