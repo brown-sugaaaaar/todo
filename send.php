@@ -7,7 +7,7 @@
   <title>Document</title>
 </head>
 <body>
-  
+
 <h1>確認ページ</h1>
 
 <h3><?php echo "この内容でよろしいですか？"; ?></h3>

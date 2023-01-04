@@ -17,7 +17,8 @@
     <h3>フォーム</h3>
     <div class="main_form">
       <div class="col-md-8">
-        <form method="post" action="send.php">
+        <!-- <form method="post" action="send.php"> -->
+        <form method="post" action="main.php">
           <div class="mb-3">
             <label for="date" class="form-label">日付</label>
             <input type="date" name="date" class="form-control" id="date">
@@ -41,12 +42,12 @@
     <h3>スケジュール</h3>
     <div class="main_form">
       <ul>
-        <li>aaa</li>
+        <li><?php echo "日付：".$_POST["date"]; ?></li>
         <li>aaa</li>
         <li>aaa</li>
       </ul>
     </div>
   </div>
-</div
+</div>
 </body>
 </html>
