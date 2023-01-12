@@ -1,3 +1,10 @@
+<?php
+
+setcookie('date', $_POST['date']);
+setcookie('summary', $_POST['summary']);
+
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -17,8 +24,7 @@
     <h3>フォーム</h3>
     <div class="main_form">
       <div class="col-md-8">
-        <!-- <form method="post" action="send.php"> -->
-        <form method="post" action="main.php">
+        <form method="post" action="top.php">
           <div class="mb-3">
             <label for="date" class="form-label">日付</label>
             <input type="date" name="date" class="form-control" id="date">
@@ -42,9 +48,8 @@
     <h3>スケジュール</h3>
     <div class="main_form">
       <ul>
-        <li><?php echo $_POST["date"]; ?></li>
-        <li>aaa</li>
-        <li>aaa</li>
+        <li><?php echo $_COOKIE['date']; ?></li>
+        <li><?php echo $_COOKIE['summary']; ?></li>
       </ul>
     </div>
   </div>
